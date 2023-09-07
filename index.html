@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign-up</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="picture">
+        <p>Photo by Stephen Leonardi on Unsplash</p>
+      </div>
+      <div class="right">
+        <div class="description left">
+          <p>
+            This is not a real online service! Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Necessitatibus, commodi!
+          </p>
+          <p>Sign up <em>now</em> to get started.</p>
+          <p class="remote-text">You <em>know</em> you want to.</p>
+        </div>
+        <form action="#">
+          <div class="form left">
+            <p class="form-title">Sign Up</p>
+            <div class="input">
+              <label for="first-name">First name</label>
+              <input type="text" name="first-name" id="first-name" required />
+            </div>
+
+            <div class="input">
+              <label for="last-name">Last name</label>
+              <input type="text" name="last-name" id="last-name" />
+            </div>
+
+            <div class="input">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+
+            <div class="input">
+              <label for="phone-number">Phone number</label>
+              <input type="tel" name="phone-number" id="phone-number" />
+            </div>
+
+            <div class="input">
+              <label for="password">Password</label>
+              <input type="password" name="passwor" id="passwor" required />
+            </div>
+
+            <div class="input">
+              <label for="confirm-password">Confirm password</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+            </div>
+          </div>
+          <div class="left button">
+            <button type="submit">Create Account</button>
+          </div>
+        </form>
+        <div class="log-in left">
+          <p>Already have an account?</p>
+          <a href="#">Log in</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

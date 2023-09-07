@@ -1,0 +1,179 @@
+:root {
+  --txt: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* left side */
+
+.picture {
+  background-image: url(./images/stephen-leonardi-Xwjt2gkLQB8-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40vw;
+  position: relative;
+}
+
+.picture p {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* right side */
+
+.right {
+  width: 60vw;
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.left {
+  padding-left: 1vw;
+}
+
+.description {
+  font-weight: 600;
+  width: 90%;
+  font-size: 1.6rem;
+}
+
+.remote-text {
+  margin: 40px 0 80px;
+}
+
+/* form */
+
+.form {
+  background-color: #6d6d6d;
+  box-shadow: 0 10px 20px -2px #6d6d6d;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.input {
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  opacity: 60%;
+}
+
+.form-title {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid black;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  color: grey;
+  font-weight: 700;
+  font-size: 1.2em;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 10px 40px;
+  margin: 40px 0;
+}
+
+button:hover {
+  background-color: grey;
+  color: black;
+}
+
+.log-in {
+  display: flex;
+  gap: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 700;
+}
+
+a:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    flex-flow: column;
+    height: auto;
+    text-align: center;
+  }
+  .picture {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    background-size: cover;
+  }
+  .right {
+    width: auto;
+    height: auto;
+  }
+  .description {
+    width: auto;
+    margin-top: 30px;
+  }
+  .left {
+    padding: 10px 20px;
+  }
+  .remote-text {
+    padding: 20px 0;
+    margin: 0;
+  }
+  .form {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .input {
+    text-align: left;
+    width: auto;
+    font-size: 0.9em;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    font-size: 0.9rem;
+    height: 1.5rem;
+    width: 70vw;
+  }
+  .button,
+  .log-in {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  button {
+    margin-bottom: 0px;
+    width: 60vw;
+    padding: 10px 5px;
+  }
+}
