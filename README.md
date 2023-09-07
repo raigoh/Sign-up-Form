@@ -20,7 +20,7 @@ This is a simple sign-up page template created with HTML and CSS. It provides a 
 
 ## Demo
 
-You can see a live demo of this sign-up page [here](https://rsignup.netlify.app)).
+You can see a live demo of this sign-up page [here](https://rsignup.netlify.app).
 
 ## License
 
